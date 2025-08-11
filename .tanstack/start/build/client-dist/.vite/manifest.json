@@ -1,0 +1,63 @@
+{
+  "../../../../../../~start/default-client-entry.tsx": {
+    "file": "assets/main-BzeUv_1T.js",
+    "name": "main",
+    "src": "../../../../../../~start/default-client-entry.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/.pnpm/@tanstack+query-devtools@5.84.0/node_modules/@tanstack/query-devtools/build/DevtoolsComponent/LNWAZHJI.js",
+      "src/routes/index.tsx?tsr-split=component",
+      "src/routes/boards.$boardId.tsx?tsr-split=component"
+    ],
+    "assets": [
+      "assets/app-tn0RQdqM.css"
+    ]
+  },
+  "/Users/mehdinabhani/Dropbox/git/ai-coder-start/geenius-v6.1/src/styles/app.css": {
+    "file": "assets/app-tn0RQdqM.css",
+    "src": "/Users/mehdinabhani/Dropbox/git/ai-coder-start/geenius-v6.1/src/styles/app.css"
+  },
+  "_useSuspenseQuery-CyM2fMs8.js": {
+    "file": "assets/useSuspenseQuery-CyM2fMs8.js",
+    "name": "useSuspenseQuery",
+    "imports": [
+      "../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "node_modules/.pnpm/@tanstack+query-devtools@5.84.0/node_modules/@tanstack/query-devtools/build/DevtoolsComponent/LNWAZHJI.js": {
+    "file": "assets/LNWAZHJI-DFyY3jUI.js",
+    "name": "LNWAZHJI",
+    "src": "node_modules/.pnpm/@tanstack+query-devtools@5.84.0/node_modules/@tanstack/query-devtools/build/DevtoolsComponent/LNWAZHJI.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/icons/icons.svg": {
+    "file": "assets/icons-DJPtrHKA.svg",
+    "src": "src/icons/icons.svg"
+  },
+  "src/routes/boards.$boardId.tsx?tsr-split=component": {
+    "file": "assets/boards._boardId-BaWe8jJ2.js",
+    "name": "boards._boardId",
+    "src": "src/routes/boards.$boardId.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../~start/default-client-entry.tsx",
+      "_useSuspenseQuery-CyM2fMs8.js"
+    ],
+    "assets": [
+      "assets/icons-DJPtrHKA.svg"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-CwFuoC2B.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../~start/default-client-entry.tsx",
+      "_useSuspenseQuery-CyM2fMs8.js"
+    ]
+  }
+}
