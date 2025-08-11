@@ -32,7 +32,7 @@ export function useCreateColumnMutation() {
     onMutate: async (variables) => {
       await queryClient.cancelQueries()
       queryClient.setQueryData(
-        boardQueries.detail(variables.data.boardId).queryKey,
+        boardQueries.detail(variables.data.boardId as string).queryKey,
         (board) =>
           board
             ? {
@@ -60,12 +60,12 @@ export function useCreateItemMutation() {
     onMutate: async (variables) => {
       await queryClient.cancelQueries()
       queryClient.setQueryData(
-        boardQueries.detail(variables.data.boardId).queryKey,
+        boardQueries.detail(variables.data.boardId as string).queryKey,
         (board) =>
           board
             ? {
                 ...board,
-                items: [...board.items, variables.data],
+                items: [...board.items, variables.data as any],
               }
             : undefined,
       )
@@ -81,13 +81,13 @@ export function useUpdateCardMutation() {
     onMutate: async (variables) => {
       await queryClient.cancelQueries()
       queryClient.setQueryData(
-        boardQueries.detail(variables.data.boardId).queryKey,
+        boardQueries.detail(variables.data.boardId as string).queryKey,
         (board) =>
           board
             ? {
                 ...board,
                 items: board.items.map((i) =>
-                  i.id === variables.data.id ? variables.data : i,
+                  i.id === variables.data.id ? variables.data as any : i,
                 ),
               }
             : undefined,
@@ -105,7 +105,7 @@ export function useDeleteCardMutation() {
       await queryClient.cancelQueries()
 
       queryClient.setQueryData(
-        boardQueries.detail(variables.data.boardId).queryKey,
+        boardQueries.detail(variables.data.boardId as string).queryKey,
         (board) =>
           board
             ? {
@@ -129,7 +129,7 @@ export function useDeleteColumnMutation() {
       await queryClient.cancelQueries()
 
       queryClient.setQueryData(
-        boardQueries.detail(variables.data.boardId).queryKey,
+        boardQueries.detail(variables.data.boardId as string).queryKey,
         (board) =>
           board
             ? {
@@ -162,7 +162,7 @@ export function useUpdateColumnMutation() {
       await queryClient.cancelQueries()
 
       queryClient.setQueryData(
-        boardQueries.detail(variables.data.boardId).queryKey,
+        boardQueries.detail(variables.data.boardId as string).queryKey,
         (board) =>
           board
             ? {

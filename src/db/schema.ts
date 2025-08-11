@@ -6,18 +6,18 @@ export const itemSchema = z.object({
   content: z.string().optional(),
   order: z.coerce.number(),
   columnId: z.string().uuid(),
-  boardId: z.coerce.string(),
+  boardId: z.string(),
 })
 
 export const columnSchema = z.object({
   id: z.string().uuid(),
-  boardId: z.coerce.string(),
+  boardId: z.string(),
   name: z.string(),
   order: z.number(),
 })
 
 export const boardSchema = z.object({
-  id: z.coerce.string(),
+  id: z.string(),
   name: z.string(),
   color: z.string(),
   columns: z.array(columnSchema),
